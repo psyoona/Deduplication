@@ -24,6 +24,7 @@ public class Deduplication {
 		fileName = "result.txt";
 		String sir = System.getProperty("user.dir");
 		System.out.println("현재 디렉토리는 " + sir + " 입니다");
+		System.out.println("중복 제거를 시작합니다.");
 		try {
 			////////////////////////////////////////////////////////////////
 			Date dt = new Date();
@@ -64,6 +65,8 @@ public class Deduplication {
 
 			bw.close();
 			in.close();
+			System.out.println("중복 제거가 완료되었습니다.");
+			System.out.println(outputFile+" 을 확인하십시오.");
 			////////////////////////////////////////////////////////////////
 		} catch (FileNotFoundException fe) {
 			System.out.println("파일을 찾을 수 없습니다.");
